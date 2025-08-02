@@ -65,19 +65,6 @@ ehthumbs.db
 Desktop.ini
 
 # ========================
-# ROS 3rd Party or External Dependencies (Optional)
-# ========================
-# 如果你将外部库 clone 到 src/ 下，而不希望上传它们，可以添加：
-# src/third_party_package_name/
-
-# ========================
-# ROS 2 Overlay Workspaces (Optional)
-# ========================
-install_local/
-build_local/
-log_local/
-
-# ========================
 # Miscellaneous
 # ========================
 *.log
