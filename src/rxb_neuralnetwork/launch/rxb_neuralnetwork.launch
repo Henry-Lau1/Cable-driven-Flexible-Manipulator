@@ -1,0 +1,4 @@
+<launch>
+  <node name="data_publisher" pkg="rxb_neuralnetwork" type="data_publisher.py" output="screen" />
+  <node name="mlp_trainer" pkg="rxb_neuralnetwork" type="mlp_trainer.py" output="screen" />
+</launch>

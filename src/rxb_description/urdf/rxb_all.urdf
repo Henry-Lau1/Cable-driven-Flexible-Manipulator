@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rxb_description">
+  <link
+    name="Link_Base">
+    <inertial>
+      <origin
+        xyz="-5.4833E-09 -1.0558E-09 0.019775"
+        rpy="0 0 0" />
+      <mass
+        value="0.13854" />
+      <inertia
+        ixx="0.00019476"
+        ixy="-1.9999E-11"
+        ixz="5.7283E-11"
+        iyy="0.00020184"
+        iyz="9.884E-12"
+        izz="0.00020732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="1.0104E-08 1.0232E-08 -1.9979E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.043053" />
+      <inertia
+        ixx="1.3084E-05"
+        ixy="4.5931E-10"
+        ixz="1.8513E-11"
+        iyy="1.3061E-05"
+        iyz="-1.8595E-11"
+        izz="1.8068E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_1.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.083"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Base" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="6.92775188338132E-10 6.45404889151772E-09 0.0549999980583439"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158754" />
+      <inertia
+        ixx="0.000106217782705313"
+        ixy="2.26997887566645E-12"
+        ixz="-1.46044594809386E-10"
+        iyy="0.000119974233834078"
+        iyz="-2.20808392711434E-12"
+        izz="6.41264109128055E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_2.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="1.0104009755725E-08 1.02316713291555E-08 -1.99789073555556E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618011" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464583884E-10"
+        ixz="1.85131522404431E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234796418E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_3.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_2" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="6.9277545953447E-10 6.45404872571012E-09 0.0549999980583439"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158757" />
+      <inertia
+        ixx="0.000106217782705313"
+        ixy="2.2699788024265E-12"
+        ixz="-1.46044595102847E-10"
+        iyy="0.000119974233834078"
+        iyz="-2.20808379860918E-12"
+        izz="6.41264109128056E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_4.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_1" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="1.01040097334203E-08 1.02316713359479E-08 -1.99789073555001E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.043053416761801" />
+      <inertia
+        ixx="1.30843177909023E-05"
+        ixy="4.59306464587283E-10"
+        ixz="1.85131522720398E-11"
+        iyy="1.30606430354558E-05"
+        iyz="-1.85950235146396E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_5.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_1" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="6.92774966192583E-10 6.45404885077868E-09 0.0549999980583441"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158756" />
+      <inertia
+        ixx="0.000106217782705313"
+        ixy="2.2699786749959E-12"
+        ixz="-1.46044594617312E-10"
+        iyy="0.000119974233834078"
+        iyz="-2.20808397277327E-12"
+        izz="6.41264109128056E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_6.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_2" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_7">
+    <inertial>
+      <origin
+        xyz="1.01040097484981E-08 1.02316713754812E-08 -1.99789073555001E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618011" />
+      <inertia
+        ixx="1.30843177909023E-05"
+        ixy="4.59306464584384E-10"
+        ixz="1.85131522407011E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234641434E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_7.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_7"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_6" />
+    <child
+      link="Link_7" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_2" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_8">
+    <inertial>
+      <origin
+        xyz="-6.92775804053446E-10 -6.45404827468107E-09 0.0549999980583439"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158755" />
+      <inertia
+        ixx="0.000106217782705313"
+        ixy="2.26997898891704E-12"
+        ixz="1.46044594962054E-10"
+        iyy="0.000119974233834078"
+        iyz="2.20808423834578E-12"
+        izz="6.41264109128055E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_8.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_8"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_7" />
+    <child
+      link="Link_8" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_1" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_9">
+    <inertial>
+      <origin
+        xyz="1.01040097447099E-08 1.02316713228416E-08 -1.99789073555001E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618012" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464583718E-10"
+        ixz="1.85131522766916E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234800416E-11"
+        izz="1.80677238231025E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_9.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_9"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_8" />
+    <child
+      link="Link_9" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_10">
+    <inertial>
+      <origin
+        xyz="6.92775174282752E-10 6.45404891225269E-09 0.0549999980583439"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158752" />
+      <inertia
+        ixx="0.000106217782705312"
+        ixy="2.26997884512043E-12"
+        ixz="-1.46044595142725E-10"
+        iyy="0.000119974233834077"
+        iyz="-2.20808390880481E-12"
+        izz="6.41264109128054E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_10.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_10"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_9" />
+    <child
+      link="Link_10" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_11">
+    <inertial>
+      <origin
+        xyz="1.01040097669885E-08 1.02316714068604E-08 -1.99789073555001E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618012" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464591687E-10"
+        ixz="1.85131522471567E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234657486E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_11.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_11"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_10" />
+    <child
+      link="Link_11" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_10" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_12">
+    <inertial>
+      <origin
+        xyz="1.06716513935055E-09 6.56108220966113E-09 0.0549999976354911"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359430785643" />
+      <inertia
+        ixx="0.000106217781684007"
+        ixy="2.47290505935373E-12"
+        ixz="-1.46878284393236E-10"
+        iyy="0.000119974232151906"
+        iyz="-2.44421837145218E-12"
+        izz="6.41264100840519E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_12.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_12"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_11" />
+    <child
+      link="Link_12" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_9" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_13">
+    <inertial>
+      <origin
+        xyz="1.01040097134455E-08 1.02316713636383E-08 -1.99789073557222E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618013" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464588926E-10"
+        ixz="1.85131522941175E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234623596E-11"
+        izz="1.80677238231025E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_13.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_13"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_12" />
+    <child
+      link="Link_13" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_9" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_14">
+    <inertial>
+      <origin
+        xyz="6.92775060239595E-10 6.45404916349498E-09 0.054999997212638"
+        rpy="0 0 0" />
+      <mass
+        value="0.084435941641254" />
+      <inertia
+        ixx="0.000106217780662701"
+        ixy="2.67583074891859E-12"
+        ixz="-1.46044595052338E-10"
+        iyy="0.000119974230469735"
+        iyz="-2.20808430269629E-12"
+        izz="6.41264092552989E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_14.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_14"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_13" />
+    <child
+      link="Link_14" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_10" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_15">
+    <inertial>
+      <origin
+        xyz="1.01040096531514E-08 1.02316713823111E-08 -1.99789073552781E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618015" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.5930646458258E-10"
+        ixz="1.85131522501147E-11"
+        iyy="1.3060643035456E-05"
+        iyz="-1.85950234612563E-11"
+        izz="1.80677238231025E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_15.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_15.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_15"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_14" />
+    <child
+      link="Link_15" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_10" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_16">
+    <inertial>
+      <origin
+        xyz="-6.92775918665772E-10 -6.45404833297036E-09 0.0549999980583441"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158763" />
+      <inertia
+        ixx="0.000106217782705314"
+        ixy="2.26997901164901E-12"
+        ixz="1.46044595600223E-10"
+        iyy="0.000119974233834079"
+        iyz="2.20808418235175E-12"
+        izz="6.41264109128058E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_16.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_16.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_16"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_15" />
+    <child
+      link="Link_16" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_9" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_17">
+    <inertial>
+      <origin
+        xyz="1.01040097331695E-08 1.02316713916676E-08 -1.99789073553891E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618012" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464585112E-10"
+        ixz="1.85131522807412E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234748913E-11"
+        izz="1.80677238231025E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_17.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_17.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_17"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_16" />
+    <child
+      link="Link_17" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_18">
+    <inertial>
+      <origin
+        xyz="6.92775018805065E-10 6.45404887998603E-09 0.0549999980583438"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158754" />
+      <inertia
+        ixx="0.000106217782705313"
+        ixy="2.26997888393446E-12"
+        ixz="-1.46044594522816E-10"
+        iyy="0.000119974233834078"
+        iyz="-2.20808399376015E-12"
+        izz="6.41264109128055E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_18.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_18.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_18"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_17" />
+    <child
+      link="Link_18" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link_19">
+    <inertial>
+      <origin
+        xyz="1.01040095799695E-08 1.02316712455543E-08 -1.99789073556111E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618013" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.5930646458597E-10"
+        ixz="1.85131522538623E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234878036E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_19.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_19"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_18" />
+    <child
+      link="Link_19" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_18" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_20">
+    <inertial>
+      <origin
+        xyz="6.92775732181566E-10 6.45404860232469E-09 0.0549999980583442"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158771" />
+      <inertia
+        ixx="0.000106217782705315"
+        ixy="2.26997885160174E-12"
+        ixz="-1.46044594860131E-10"
+        iyy="0.00011997423383408"
+        iyz="-2.20808379849493E-12"
+        izz="6.41264109128062E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_20.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_20"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_19" />
+    <child
+      link="Link_20" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_17" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_21">
+    <inertial>
+      <origin
+        xyz="1.0104009726584E-08 1.02316713770784E-08 -1.99789073556111E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618012" />
+      <inertia
+        ixx="1.30843177909024E-05"
+        ixy="4.59306464591021E-10"
+        ixz="1.85131522604123E-11"
+        iyy="1.30606430354559E-05"
+        iyz="-1.85950234792674E-11"
+        izz="1.80677238231024E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_21.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_21"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_20" />
+    <child
+      link="Link_21" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_17" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_22">
+    <inertial>
+      <origin
+        xyz="6.92774911121145E-10 6.45404899153338E-09 0.054999998058344"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158763" />
+      <inertia
+        ixx="0.000106217782705314"
+        ixy="2.26997870613721E-12"
+        ixz="-1.46044594641591E-10"
+        iyy="0.000119974233834079"
+        iyz="-2.20808392832759E-12"
+        izz="6.41264109128058E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_22.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_22.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_22"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Link_21" />
+    <child
+      link="Link_22" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_18" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_23">
+    <inertial>
+      <origin
+        xyz="1.01040096008591E-08 1.02316712184685E-08 -1.99789073556111E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430534167618007" />
+      <inertia
+        ixx="1.30843177909022E-05"
+        ixy="4.59306464587685E-10"
+        ixz="1.85131522600016E-11"
+        iyy="1.30606430354558E-05"
+        iyz="-1.85950234927464E-11"
+        izz="1.80677238231023E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_23.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_23.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_23"
+    type="revolute">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_22" />
+    <child
+      link="Link_23" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_18" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Link_24">
+    <inertial>
+      <origin
+        xyz="-6.92814541927074E-10 -6.45397831609587E-09 0.0549999980583409"
+        rpy="0 0 0" />
+      <mass
+        value="0.0844359445158761" />
+      <inertia
+        ixx="0.000106217782705314"
+        ixy="2.26997885621196E-12"
+        ixz="1.4604459404412E-10"
+        iyy="0.000119974233834079"
+        iyz="2.20808410306866E-12"
+        izz="6.41264109128056E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Link_24.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.055"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.11" radius="0.041"/>
+<!--        <mesh
+          filename="package://rxb_description/meshes/Link_24.STL" />-->
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_24"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_23" />
+    <child
+      link="Link_24" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.314"
+      upper="0.314"
+      effort="100"
+      velocity="1" />
+    <mimic joint="Joint_17" multiplier="1.0" offset="0.0"/>
+  </joint>
+  <link
+    name="Gripper">
+    <inertial>
+      <origin
+        xyz="-3.84845645265621E-14 7.08704268072003E-14 -0.00747292029365343"
+        rpy="0 0 0" />
+      <mass
+        value="0.115606649328716" />
+      <inertia
+        ixx="9.34355302681466E-05"
+        ixy="1.70242494233915E-23"
+        ixz="5.63737986979482E-24"
+        iyy="9.34355302681466E-05"
+        iyz="-2.43925955257932E-19"
+        izz="0.0001632959831288" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rxb_description/meshes/Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Gripper"
+    type="fixed">
+    <origin
+      xyz="0 0 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_24" />
+    <child
+      link="Gripper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

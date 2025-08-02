@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+<node name="rxb_hardware_interface_node" pkg="rxb_hardware_interface" type="rxb_hardware_interface_node" output="screen"/>
+
+</launch>

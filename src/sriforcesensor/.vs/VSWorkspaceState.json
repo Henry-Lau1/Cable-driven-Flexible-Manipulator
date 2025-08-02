@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea",
+    "\\.idea\\codeStyles",
+    "\\out",
+    "\\out\\build",
+    "\\src",
+    "\\src\\cmake-build-debug",
+    "\\src\\cmake-build-debug\\CMakeFiles\\3.9.6",
+    "\\src\\cmake-build-debug\\CMakeFiles\\3.9.6\\CompilerIdC",
+    "\\src\\cmake-build-debug\\CMakeFiles\\3.9.6\\CompilerIdCXX",
+    "\\src\\cmake-build-debug\\CMakeFiles\\src.dir"
+  ],
+  "SelectedNode": "\\src\\TCPClient.h",
+  "PreviewInSolutionExplorer": false
+}

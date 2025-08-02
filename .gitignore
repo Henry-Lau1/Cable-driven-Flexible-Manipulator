@@ -1,0 +1,86 @@
+# ========================
+# ROS Workspace Ignored Folders
+# ========================
+build/
+devel/
+install/
+logs/
+
+# Catkin & Colcon workspace files
+.catkin_workspace
+.rosinstall
+colcon.meta
+log/
+
+# ========================
+# IDE / Editor Configuration Files
+# ========================
+.vscode/
+.idea/
+*.code-workspace
+
+# Eclipse
+.project
+.cproject
+.settings/
+
+# QtCreator
+*.pro.user
+*.qbs.user
+*.pro.user.*
+
+# ========================
+# Python Bytecode & Caches
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ========================
+# CMake & Makefiles
+# ========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ========================
+# Package-specific Ignored Files
+# ========================
+*.orig
+*.rej
+*.bak
+*.backup
+*.swp
+*.swo
+*.tmp
+
+# ========================
+# OS Specific Files
+# ========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================
+# ROS 3rd Party or External Dependencies (Optional)
+# ========================
+# 如果你将外部库 clone 到 src/ 下，而不希望上传它们，可以添加：
+# src/third_party_package_name/
+
+# ========================
+# ROS 2 Overlay Workspaces (Optional)
+# ========================
+install_local/
+build_local/
+log_local/
+
+# ========================
+# Miscellaneous
+# ========================
+*.log
+*.trace
+*.tags
+

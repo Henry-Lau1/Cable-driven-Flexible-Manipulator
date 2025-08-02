@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+
+
+<!--include file="$(find rxb_moveit_control)/launch/rxb_moveit_control.launch" /-->
+
+
+
+
+<include file="$(find rxb_hardware_interface)/launch/rxb_hardware_interface.launch"/>
+
+<!--include file="$(find serial_communication)/launch/serial_communication.launch"/-->
+
+
+
+</launch>
