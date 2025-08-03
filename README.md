@@ -26,7 +26,18 @@ Cable-driven-Flexible-Manipulator
 │   ├── serial_communication                            # 与下位机UART串口通信
 │   ├── sriforcesensor                                  # 与六维力传感器TCP通信
 ├── .gitignore                                          # Git 忽略文件配置
+├── License                                             # 许可证文件
 ├── README.md                                           # 项目说明文档
 ├── cable_driven_flexible_manipulator.workspace         # Qt生成ROS工作空间文件1
 ├── cable_driven_flexible_manipulator.workspace.user    # Qt生成ROS工作空间文件2
 ```
+
+## 许可证
+版权所有 (c) 2025 Henry Lau
+
+保留所有权利。
+
+本项目及其所有内容为原创作品，任何组织或个人未经作者书面许可，不得以任何形式复制、转载、传播、修改、发布或使用，包括但不限于商业、教学、研究、展示等场景。
+
+任何未经授权的使用行为均属于侵权行为，作者将依法追究其法律责任。
+
